@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,600&display=swap");
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #494F55;
+  /* Updated background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.right-container {
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  width: 90%;
+  min-width: 300px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.lines {
+  font-size: 24px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.res {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.res th,
+.res td {
+  padding: 12px;
+  text-align: left;
+}
+
+.res th {
+  background-color: #6d5acf;
+  color: #fff;
+}
+
+.res tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #6d5acf;
+  font-size: 16px;
+}
+
+/* Additional Styling */
+.headerTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #6d5acf;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6d5acf;
+  color: #fff;
+}
