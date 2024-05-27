@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,600&display=swap");
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: #494F55;
+  /* Updated background color */
+  color: #333;
+  display: flex;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100vh;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav-close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  border-radius: 0.5em;
+}
+
+.right-container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.right-container h1 {
+  color: #6d5acf;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.right-container .set {
+  margin: 15px 0;
+}
+
+.right-container input,
+select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+  outline: none;
+}
+
+.right-container input,
+.right-container label {
+  color: #6d5acf;
+}
+
+.radio-container input[type="radio"]:not(:checked)+label {
+  background: #eee;
+  border: 1px solid #ccc;
+  color: #666;
+}
+
+.radio-container label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: .3s all ease-in-out;
+  width: 80px;
+  cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container input[type="radio"]:checked+label {
+  background: #6d5acf;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #6d5acf;
+  padding: 10px 0;
+}
